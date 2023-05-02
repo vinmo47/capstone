@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Uploader</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="C:\Users\vm040\OneDrive\Desktop\capstone\style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Music Uploader</h1>
+        <form id="uploadForm">
+            <div class="form-group">
+                <label for="musicFile">Upload Music File</label>
+                <input type="file" class="form-control-file" id="musicFile" accept="audio/*">
+            </div>
+            <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+        <div id="uploadedMusicList" class="mt-4">
+            <h3>Uploaded Music</h3>
+            <ul class="list-group"></ul>
+        </div>
+    </div>
+ 
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
